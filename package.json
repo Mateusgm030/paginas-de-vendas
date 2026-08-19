@@ -1,0 +1,22 @@
+{
+  "name": "paginas-de-vendas",
+  "version": "1.0.0",
+  "description": "Página de vendas de alta performance do smartwatch HOROS ELITE - Chronos Precision",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"Este é um projeto estático. Abra o arquivo index.html diretamente no seu navegador ou use um servidor local estático.\""
+  },
+  "keywords": [
+    "landing-page",
+    "smartwatch",
+    "tailwind",
+    "vanilla-js",
+    "performance"
+  ],
+  "author": "Mateusgm030",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mateusgm030/paginas-de-vendas/issues"
+  },
+  "homepage": "https://github.com/Mateusgm030/paginas-de-vendas#readme"
+}
