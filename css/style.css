@@ -1,0 +1,111 @@
+/**
+ * Stylesheet for HOROS ELITE Smartwatch Landing Page
+ * Contém variáveis de cor do Chronos Precision, animações,
+ * e estilos customizados de performance e efeitos.
+ */
+
+:root {
+    --color-background: #0b1326;
+    --color-surface: #0b1326;
+    --color-surface-dim: #0b1326;
+    --color-surface-bright: #31394d;
+    --color-surface-container-lowest: #060e20;
+    --color-surface-container-low: #131b2e;
+    --color-surface-container: #171f33;
+    --color-surface-container-high: #222a3d;
+    --color-surface-container-highest: #2d3449;
+    --color-on-surface: #dae2fd;
+    --color-on-surface-variant: #b9caca;
+    --color-outline: #849495;
+    --color-outline-variant: #3a494a;
+    --color-surface-tint: #00dce5;
+    --color-primary: #e9feff;
+    --color-on-primary: #003739;
+    --color-primary-container: #00f5ff;
+    --color-on-primary-container: #006c71;
+    --color-secondary: #4ae176;
+    --color-on-secondary: #003915;
+    --color-secondary-container: #00b954;
+    --color-on-secondary-container: #004119;
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-error-container: #93000a;
+}
+
+/* Scroll behave */
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Heart pulsation animation for heart rate card */
+.pulse-heart {
+    animation: pulse-heart 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-heart {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* Glassmorphism Surface effect */
+.glass-panel {
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Material Symbols Utilities to remove inline styles */
+.material-icon-filled-32 {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48 !important;
+    font-size: 32px !important;
+}
+
+.material-icon-wght200-fill1 {
+    font-variation-settings: 'wght' 200, 'FILL' 1 !important;
+}
+
+.material-icon-wght200 {
+    font-variation-settings: 'wght' 200 !important;
+}
+
+/* Scroll entrance animations (Framer Motion replica) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    will-change: transform, opacity;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Grid delays for sequential reveal */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Custom Inputs according to DESIGN.md */
+.custom-input {
+    border-bottom: 2px solid var(--color-outline-variant);
+    background: transparent;
+    transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-primary-container);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Micro-interaction for buttons (98% scale on active) */
+.btn-scale-active:active {
+    transform: scale(0.98);
+}
