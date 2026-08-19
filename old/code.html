@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HOROS ELITE - Conectividade Total. Saúde sob Medida.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#0b1326",
+                        "inverse-on-surface": "#283044",
+                        "on-secondary-fixed": "#002109",
+                        "tertiary-container": "#dcdee0",
+                        "surface-dim": "#0b1326",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#2d3449",
+                        "inverse-primary": "#00696e",
+                        "outline": "#849495",
+                        "on-primary-fixed": "#002021",
+                        "on-background": "#dae2fd",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-secondary": "#003915",
+                        "on-error": "#690005",
+                        "primary-container": "#00f5ff",
+                        "on-primary": "#003739",
+                        "tertiary": "#f8fafc",
+                        "secondary-fixed": "#6bff8f",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "primary-fixed-dim": "#00dce5",
+                        "secondary-fixed-dim": "#4ae176",
+                        "on-secondary-container": "#004119",
+                        "surface-tint": "#00dce5",
+                        "on-surface": "#dae2fd",
+                        "surface-container-low": "#131b2e",
+                        "surface-container-high": "#222a3d",
+                        "surface-container": "#171f33",
+                        "surface-container-lowest": "#060e20",
+                        "inverse-surface": "#dae2fd",
+                        "surface-bright": "#31394d",
+                        "on-primary-fixed-variant": "#004f53",
+                        "secondary": "#4ae176",
+                        "secondary-container": "#00b954",
+                        "on-tertiary-container": "#5f6264",
+                        "on-primary-container": "#006c71",
+                        "on-surface-variant": "#b9caca",
+                        "primary": "#e9feff",
+                        "surface": "#0b1326",
+                        "surface-container-highest": "#2d3449",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#63f7ff",
+                        "tertiary-fixed": "#e0e3e5",
+                        "outline-variant": "#3a494a",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "on-tertiary": "#2d3133",
+                        "on-secondary-fixed-variant": "#005321"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-xl": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pulse-heart {
+            animation: pulse-heart 1.5s infinite ease-in-out;
+        }
+        @keyframes pulse-heart {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col smooth-scroll overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md dark:bg-background/80 docked full-width top-0 sticky bg-background dark:bg-background border-b border-white/10 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop h-20 z-50 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="font-display-lg text-body-lg tracking-tighter font-bold text-primary dark:text-primary-fixed">
+                HOROS ELITE
+            </div>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary-container transition-colors duration-300 h-full flex items-center" href="#performance">Performance</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary-container transition-colors duration-300 h-full flex items-center" href="#saude">Saúde</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary-container transition-colors duration-300 h-full flex items-center" href="#design">Design</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary-container transition-colors duration-300 h-full flex items-center" href="#specs">Specs</a>
+</nav>
+<a class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-label-sm uppercase tracking-widest hover:scale-95 transition-transform duration-200" href="#comprar">
+                Compre Agora
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col items-center justify-center pt-stack-xl pb-stack-xl px-margin-mobile md:px-margin-desktop overflow-hidden">
+<!-- Ambient Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center relative z-10">
+<div class="flex flex-col items-start gap-stack-md order-2 md:order-1">
+<span class="bg-secondary-container/10 text-secondary px-3 py-1 rounded-full font-label-sm uppercase tracking-widest border border-secondary-container/20">Lançamento</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">
+                        Conectividade Total.<br/>
+<span class="text-secondary-fixed">Saúde sob Medida.</span>
+</h1>
+<p class="font-body-lg text-on-surface-variant max-w-lg">
+                        Seu assistente de bem-estar 24/7. O design minimalista encontra a precisão biométrica no novo HOROS ELITE.
+                    </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-stack-md mt-stack-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-sm uppercase tracking-widest hover:scale-95 transition-transform duration-200 text-center flex flex-col" href="#comprar">
+<span>Compre Agora - R$ 187,00</span>
+</a>
+<div class="flex flex-col">
+<span class="line-through text-on-surface-variant font-body-sm">De R$ 289,00</span>
+<span class="text-secondary font-label-sm">Economize R$ 102,00 hoje</span>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center relative">
+<!-- Premium Watch Image Placeholder -->
+<div class="relative w-full max-w-md aspect-square">
+<img class="w-full h-full object-contain drop-shadow-2xl" data-alt="A highly detailed, ultra-realistic 3D render of a premium, sleek black smartwatch floating against a deep, dark slate background. The lighting is cinematic and dramatic, with a soft blue rim light highlighting the flawless, minimalist curves of the watch's metallic bezel. The high-resolution display glows softly, showing a clean, modern digital interface. The mood is high-tech, luxurious, and precise, capturing a sense of cutting-edge modern corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuCWMFzSKH6eFZWJwdRqzPvtaRmFpy0vXJk1CJhHd9hXBtd_eNWvraTPclOsj7-2VkpvzvD7QPQbKOxpB5xUhzkc1dMSk1wHYeV9IL0MLvcjbOrzg5a9LJpzZMVBt0Bjw2GIHEWcY34EROE3qSsvR6n-ki0AcTj_RbhTzPiCm8r67b4MtG2AL1VT7FvvGDNSFZqdyiZUx8f_L9eWfVNcPqQEUvYfCqiO4Tcq1kO_WgMTUUYDk2RC0ZTg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Notifications (Bento Grid) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="performance">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary">Nunca perca o que importa.</h2>
+<p class="font-body-md text-on-surface-variant mt-stack-sm">Sincronização instantânea com sua vida digital.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Bento Box 1 -->
+<div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#25D366]/10 flex items-center justify-center mb-stack-sm text-[#25D366]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">forum</span>
+</div>
+<h3 class="font-headline-sm font-semibold text-primary">WhatsApp</h3>
+<p class="font-body-sm text-on-surface-variant mt-2">Mensagens direto no pulso</p>
+</div>
+<!-- Bento Box 2 -->
+<div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#E1306C]/10 flex items-center justify-center mb-stack-sm text-[#E1306C]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">photo_camera</span>
+</div>
+<h3 class="font-headline-sm font-semibold text-primary">Instagram</h3>
+<p class="font-body-sm text-on-surface-variant mt-2">Notificações em tempo real</p>
+</div>
+<!-- Bento Box 3 -->
+<div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-stack-sm text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 32px;">call</span>
+</div>
+<h3 class="font-headline-sm font-semibold text-primary">Chamadas</h3>
+<p class="font-body-sm text-on-surface-variant mt-2">Atenda sem sacar o telefone</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Health (Glassmorphism Cards) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop relative overflow-hidden" id="saude">
+<!-- Ambient Glow -->
+<div class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-secondary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="mb-stack-lg">
+<h2 class="font-headline-md text-headline-lg-mobile md:text-headline-lg text-primary">Seu assistente pessoal de bem-estar.</h2>
+<p class="font-body-lg text-on-surface-variant mt-stack-sm max-w-2xl">Monitoramento preciso para uma vida em alta performance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Heart Rate Card -->
+<div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 text-secondary-fixed">
+<span class="material-symbols-outlined pulse-heart" style="font-variation-settings: 'wght' 200, 'FILL' 1;">favorite</span>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-secondary-fixed mb-stack-sm">BPM</span>
+<div class="font-headline-md text-primary mt-auto">Frequência<br/>Cardíaca</div>
+<p class="font-body-sm text-on-surface-variant mt-2 text-sm">Monitoramento contínuo</p>
+</div>
+<!-- Sleep Card -->
+<div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">bedtime</span>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-primary-container mb-stack-sm">Sono</span>
+<div class="font-headline-md text-primary mt-auto">Qualidade<br/>do Sono</div>
+<p class="font-body-sm text-on-surface-variant mt-2 text-sm">Fases REM e Profundo</p>
+</div>
+<!-- Blood Pressure Card -->
+<div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">blood_pressure</span>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-error mb-stack-sm">Pressão</span>
+<div class="font-headline-md text-primary mt-auto">Pressão<br/>Arterial</div>
+<p class="font-body-sm text-on-surface-variant mt-2 text-sm">Estimativas vitais diárias</p>
+</div>
+<!-- Reminders Card -->
+<div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 200;">water_drop</span>
+</div>
+<span class="font-label-sm uppercase tracking-widest text-secondary mb-stack-sm">Lembretes</span>
+<div class="font-headline-md text-primary mt-auto">Água &amp;<br/>Remédios</div>
+<p class="font-body-sm text-on-surface-variant mt-2 text-sm">Nunca esqueça sua rotina</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tech Specs -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="specs">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-lg border-b border-white/10 pb-stack-sm">Especificações Técnicas</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="flex flex-col gap-stack-sm">
+<div class="flex items-center gap-4 p-4 border border-white/5 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary-container">language</span>
+<div>
+<span class="font-label-sm text-on-surface-variant uppercase block">Idioma</span>
+<span class="font-body-md text-primary">Português (Brasil) nativo</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 border border-white/5 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary-container">battery_charging_full</span>
+<div>
+<span class="font-label-sm text-on-surface-variant uppercase block">Bateria</span>
+<span class="font-body-md text-primary">Até 7 dias de duração</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h3 class="font-label-sm uppercase text-secondary tracking-widest mb-2">Métricas de Atividade</h3>
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5">
+<span class="material-symbols-outlined text-secondary-fixed mb-2">directions_walk</span>
+<span class="font-headline-sm text-primary">Passos</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5">
+<span class="material-symbols-outlined text-error mb-2">local_fire_department</span>
+<span class="font-headline-sm text-primary">Calorias</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5">
+<span class="material-symbols-outlined text-primary-container mb-2">route</span>
+<span class="font-headline-sm text-primary">Distância</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Originality Badge -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop flex justify-center">
+<div class="bg-surface-container-high border border-white/10 rounded-full px-8 py-4 flex items-center gap-4 shadow-2xl">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1; font-size: 32px;">verified</span>
+<div>
+<span class="font-headline-md text-primary block text-lg">Originalidade Garantida</span>
+<span class="font-body-sm text-on-surface-variant">Produto autêntico de alta precisão</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button (FAB) for Mobile/Quick Buy -->
+<a class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container px-6 py-4 rounded-full font-label-sm uppercase tracking-widest shadow-lg hover:scale-95 transition-transform duration-200 flex items-center gap-2 group" href="#comprar">
+<span>Compre Agora</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest bg-surface-container-lowest border-t border-white/5 w-full py-stack-xl px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col gap-4">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed">
+                HOROS ELITE
+            </div>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface">© 2024 HOROS Precision. Todos os direitos reservados.</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface dark:text-on-surface uppercase tracking-widest mb-2">Legal</span>
+<a class="font-body-md text-body-md text-on-tertiary-container dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Termos de Serviço</a>
+<a class="font-body-md text-body-md text-on-tertiary-container dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface dark:text-on-surface uppercase tracking-widest mb-2">Ajuda</span>
+<a class="font-body-md text-body-md text-on-tertiary-container dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Suporte</a>
+<a class="font-body-md text-body-md text-on-tertiary-container dark:text-on-tertiary-container hover:text-primary transition-colors" href="#">Rastreamento</a>
+</div>
+</footer>
+</body></html>
