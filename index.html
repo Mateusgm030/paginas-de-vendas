@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="dark smooth-scroll" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <!-- SEO Meta Tags -->
+    <title>HOROS ELITE - Conectividade Total. Saúde sob Medida.</title>
+    <meta name="description" content="Seu assistente de bem-estar 24/7. O design minimalista encontra a precisão biométrica no novo smartwatch HOROS ELITE. Adquira o seu com frete grátis." />
+    <meta name="keywords" content="smartwatch, horos elite, relógio inteligente, monitor cardíaco, saúde, performance esportiva, chronos precision" />
+    <meta name="author" content="HOROS Precision" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HOROS ELITE - Conectividade Total. Saúde sob Medida." />
+    <meta property="og:description" content="Seu assistente de bem-estar 24/7. O design minimalista encontra a precisão biométrica no novo smartwatch HOROS ELITE." />
+    <meta property="og:image" content="assets/screen.png" />
+    
+    <!-- Tailwind CSS & Plugins via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Tailwind CSS Config Script (Customized Theme) -->
+    <script src="js/tailwind-config.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <header class="bg-background/80 backdrop-blur-md sticky top-0 w-full border-b border-white/10 z-50 transition-all duration-300">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+            <a href="#" class="font-display-lg text-body-lg tracking-tighter font-bold text-primary hover:opacity-90 transition-opacity">
+                HOROS ELITE
+            </a>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 h-full flex items-center" href="#performance">Performance</a>
+                <a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 h-full flex items-center" href="#saude">Saúde</a>
+                <a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 h-full flex items-center" href="#design">Design</a>
+                <a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 h-full flex items-center" href="#specs">Specs</a>
+            </nav>
+            
+            <a class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-label-sm uppercase tracking-widest hover:scale-95 transition-all duration-200 btn-scale-active" href="#comprar">
+                Compre Agora
+            </a>
+            
+            <!-- Mobile Menu Trigger -->
+            <button id="mobile-menu-btn" class="md:hidden text-primary p-2 focus:outline-none" aria-label="Menu Principal" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-nav" class="hidden fixed inset-0 bg-background/98 z-40 flex-col items-center justify-center gap-8 text-2xl font-bold opacity-0 transition-all duration-300" role="dialog" aria-modal="true">
+        <a class="text-on-surface hover:text-secondary transition-colors" href="#performance">Performance</a>
+        <a class="text-on-surface hover:text-secondary transition-colors" href="#saude">Saúde</a>
+        <a class="text-on-surface hover:text-secondary transition-colors" href="#design">Design</a>
+        <a class="text-on-surface hover:text-secondary transition-colors" href="#specs">Specs</a>
+        <a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-sm uppercase tracking-widest text-lg mt-4 hover:scale-95 btn-scale-active" href="#comprar">
+            Compre Agora
+        </a>
+    </div>
+
+    <!-- Main Wrapper -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] flex flex-col items-center justify-center pt-stack-xl pb-stack-xl px-margin-mobile md:px-margin-desktop overflow-hidden">
+            <!-- Ambient Glow -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center relative z-10">
+                <!-- Hero Content -->
+                <div class="flex flex-col items-start gap-stack-md order-2 md:order-1 animate-on-scroll">
+                    <span class="bg-secondary-container/10 text-secondary px-3 py-1 rounded-full font-label-sm uppercase tracking-widest border border-secondary-container/20">Lançamento</span>
+                    <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">
+                        Conectividade Total.<br/>
+                        <span class="text-secondary-fixed">Saúde sob Medida.</span>
+                    </h1>
+                    <p class="font-body-lg text-on-surface-variant max-w-lg">
+                        Seu assistente de bem-estar 24/7. O design minimalista encontra a precisão biométrica no novo HOROS ELITE.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-stack-md mt-stack-sm w-full sm:w-auto">
+                        <a class="w-full sm:w-auto bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-sm uppercase tracking-widest hover:scale-95 transition-transform duration-200 text-center btn-scale-active flex flex-col" href="#comprar">
+                            <span>Compre Agora - R$ 187,00</span>
+                        </a>
+                        <div class="flex flex-col">
+                            <span class="line-through text-on-surface-variant font-body-sm">De R$ 289,00</span>
+                            <span class="text-secondary font-label-sm">Economize R$ 102,00 hoje</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="order-1 md:order-2 flex justify-center relative animate-on-scroll delay-200">
+                    <div class="relative w-full max-w-md aspect-square">
+                        <img class="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" 
+                             alt="Smartwatch HOROS ELITE preto flutuando em um fundo escuro com iluminação futurista azul." 
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuCWMFzSKH6eFZWJwdRqzPvtaRmFpy0vXJk1CJhHd9hXBtd_eNWvraTPclOsj7-2VkpvzvD7QPQbKOxpB5xUhzkc1dMSk1wHYeV9IL0MLvcjbOrzg5a9LJpzZMVBt0Bjw2GIHEWcY34EROE3qSsvR6n-ki0AcTj_RbhTzPiCm8r67b4MtG2AL1VT7FvvGDNSFZqdyiZUx8f_L9eWfVNcPqQEUvYfCqiO4Tcq1kO_WgMTUUYDk2RC0ZTg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Notifications (Bento Grid) -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="performance">
+            <div class="max-w-container-max mx-auto">
+                <div class="text-center mb-stack-lg animate-on-scroll">
+                    <h2 class="font-headline-md text-headline-md text-primary">Nunca perca o que importa.</h2>
+                    <p class="font-body-md text-on-surface-variant mt-stack-sm">Sincronização instantânea com sua vida digital.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Bento Box 1 - WhatsApp -->
+                    <div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group animate-on-scroll delay-100">
+                        <div class="w-16 h-16 rounded-full bg-[#25D366]/10 flex items-center justify-center mb-stack-sm text-[#25D366] group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined material-icon-filled-32">forum</span>
+                        </div>
+                        <h3 class="font-headline-sm font-semibold text-primary">WhatsApp</h3>
+                        <p class="font-body-sm text-on-surface-variant mt-2">Mensagens direto no pulso</p>
+                    </div>
+                    
+                    <!-- Bento Box 2 - Instagram -->
+                    <div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group animate-on-scroll delay-200">
+                        <div class="w-16 h-16 rounded-full bg-[#E1306C]/10 flex items-center justify-center mb-stack-sm text-[#E1306C] group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined material-icon-filled-32">photo_camera</span>
+                        </div>
+                        <h3 class="font-headline-sm font-semibold text-primary">Instagram</h3>
+                        <p class="font-body-sm text-on-surface-variant mt-2">Notificações em tempo real</p>
+                    </div>
+                    
+                    <!-- Bento Box 3 - Chamadas -->
+                    <div class="bg-surface-container-low rounded-xl p-stack-md border border-white/5 hover:border-primary-container/30 transition-colors flex flex-col items-center justify-center text-center group animate-on-scroll delay-300">
+                        <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-stack-sm text-primary-container group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined material-icon-filled-32">call</span>
+                        </div>
+                        <h3 class="font-headline-sm font-semibold text-primary">Chamadas</h3>
+                        <p class="font-body-sm text-on-surface-variant mt-2">Atenda sem sacar o telefone</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Health (Glassmorphism Cards) -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop relative overflow-hidden" id="saude">
+            <!-- Ambient Glow -->
+            <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-secondary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <div class="max-w-container-max mx-auto relative z-10">
+                <div class="mb-stack-lg animate-on-scroll">
+                    <h2 class="font-headline-md text-headline-lg-mobile md:text-headline-lg text-primary">Seu assistente pessoal de bem-estar.</h2>
+                    <p class="font-body-lg text-on-surface-variant mt-stack-sm max-w-2xl">Monitoramento preciso para uma vida em alta performance.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Heart Rate Card -->
+                    <div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group animate-on-scroll delay-100">
+                        <div class="absolute top-0 right-0 p-4 text-secondary-fixed">
+                            <span class="material-symbols-outlined pulse-heart material-icon-wght200-fill1">favorite</span>
+                        </div>
+                        <span class="font-label-sm uppercase tracking-widest text-secondary-fixed mb-stack-sm">BPM</span>
+                        <div class="font-headline-md text-primary mt-auto">Frequência<br/>Cardíaca</div>
+                        <p class="font-body-sm text-on-surface-variant mt-2 text-sm">Monitoramento contínuo</p>
+                    </div>
+                    
+                    <!-- Sleep Card -->
+                    <div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group animate-on-scroll delay-200">
+                        <div class="absolute top-0 right-0 p-4 text-primary-container">
+                            <span class="material-symbols-outlined material-icon-wght200">bedtime</span>
+                        </div>
+                        <span class="font-label-sm uppercase tracking-widest text-primary-container mb-stack-sm">Sono</span>
+                        <div class="font-headline-md text-primary mt-auto">Qualidade<br/>do Sono</div>
+                        <p class="font-body-sm text-on-surface-variant mt-2 text-sm">Fases REM e Profundo</p>
+                    </div>
+                    
+                    <!-- Blood Pressure Card -->
+                    <div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group animate-on-scroll delay-300">
+                        <div class="absolute top-0 right-0 p-4 text-error">
+                            <span class="material-symbols-outlined material-icon-wght200">blood_pressure</span>
+                        </div>
+                        <span class="font-label-sm uppercase tracking-widest text-error mb-stack-sm">Pressão</span>
+                        <div class="font-headline-md text-primary mt-auto">Pressão<br/>Arterial</div>
+                        <p class="font-body-sm text-on-surface-variant mt-2 text-sm">Estimativas vitais diárias</p>
+                    </div>
+                    
+                    <!-- Reminders Card -->
+                    <div class="glass-panel rounded-xl p-stack-md flex flex-col items-start hover:bg-surface-container-low transition-colors relative overflow-hidden group animate-on-scroll delay-400">
+                        <div class="absolute top-0 right-0 p-4 text-secondary">
+                            <span class="material-symbols-outlined material-icon-wght200">water_drop</span>
+                        </div>
+                        <span class="font-label-sm uppercase tracking-widest text-secondary mb-stack-sm">Lembretes</span>
+                        <div class="font-headline-md text-primary mt-auto">Água &amp;<br/>Remédios</div>
+                        <p class="font-body-sm text-on-surface-variant mt-2 text-sm">Nunca esqueça sua rotina</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Design Details (NOVA SEÇÃO) -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="design">
+            <div class="max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center">
+                    <!-- Text Details -->
+                    <div class="flex flex-col gap-stack-md animate-on-scroll">
+                        <span class="text-secondary font-label-sm uppercase tracking-widest">Estética & Engenharia</span>
+                        <h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary">Engenharia de precisão com estética futurista.</h2>
+                        <p class="font-body-lg text-on-surface-variant">
+                            Cada detalhe do HOROS ELITE foi milimetricamente pensado para equilibrar elegância e durabilidade. O corpo em liga metálica premium com acabamento acetinado protege a tela de altíssima definição contra arranhões do dia a dia.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mt-2">
+                            <div class="border-l-2 border-primary-container pl-4">
+                                <span class="block font-headline-md text-primary">2.5D</span>
+                                <span class="font-body-sm text-on-surface-variant">Vidro de Safira Curvo</span>
+                            </div>
+                            <div class="border-l-2 border-secondary pl-4">
+                                <span class="block font-headline-md text-primary">OLED</span>
+                                <span class="font-body-sm text-on-surface-variant">Visor de Alto Contraste</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Showcase / Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-on-scroll delay-200">
+                        <div class="bg-surface-container-low p-6 rounded-lg border border-white/5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-primary-container text-3xl">workspace_premium</span>
+                            <h3 class="font-headline-sm font-semibold text-primary">Titânio Espacial</h3>
+                            <p class="font-body-sm text-on-surface-variant">Corpo ultraleve e resistente construído com ligas metálicas aeroespaciais.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-6 rounded-lg border border-white/5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-secondary text-3xl">brush</span>
+                            <h3 class="font-headline-sm font-semibold text-primary">Pulseira Hipoalergênica</h3>
+                            <p class="font-body-sm text-on-surface-variant">Silicone líquido premium com toque aveludado e fecho magnético de segurança.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-6 rounded-lg border border-white/5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-error text-3xl">water_drop_outline</span>
+                            <h3 class="font-headline-sm font-semibold text-primary">Proteção IP68</h3>
+                            <p class="font-body-sm text-on-surface-variant">Resistência completa a suor, chuva e imersão temporária na água.</p>
+                        </div>
+                        <div class="bg-surface-container-low p-6 rounded-lg border border-white/5 flex flex-col gap-3">
+                            <span class="material-symbols-outlined text-secondary-fixed text-3xl">palette</span>
+                            <h3 class="font-headline-sm font-semibold text-primary">Cores Exclusivas</h3>
+                            <p class="font-body-sm text-on-surface-variant">Acabamentos anodizados em tons minimalistas e profundos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Tech Specs -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="specs">
+            <div class="max-w-container-max mx-auto">
+                <h2 class="font-headline-md text-headline-md text-primary mb-stack-lg border-b border-white/10 pb-stack-sm animate-on-scroll">Especificações Técnicas</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+                    <div class="flex flex-col gap-stack-sm animate-on-scroll">
+                        <div class="flex items-center gap-4 p-4 border border-white/5 rounded-lg bg-surface-container hover:border-white/10 transition-colors">
+                            <span class="material-symbols-outlined text-primary-container">language</span>
+                            <div>
+                                <span class="font-label-sm text-on-surface-variant uppercase block">Idioma</span>
+                                <span class="font-body-md text-primary">Português (Brasil) nativo</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 border border-white/5 rounded-lg bg-surface-container hover:border-white/10 transition-colors">
+                            <span class="material-symbols-outlined text-primary-container">battery_charging_full</span>
+                            <div>
+                                <span class="font-label-sm text-on-surface-variant uppercase block">Bateria</span>
+                                <span class="font-body-md text-primary">Até 7 dias de duração</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col gap-stack-sm animate-on-scroll delay-200">
+                        <h3 class="font-label-sm uppercase text-secondary tracking-widest mb-2">Métricas de Atividade</h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5 hover:border-white/10 transition-colors">
+                                <span class="material-symbols-outlined text-secondary-fixed mb-2">directions_walk</span>
+                                <span class="font-headline-sm text-primary">Passos</span>
+                            </div>
+                            <div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5 hover:border-white/10 transition-colors">
+                                <span class="material-symbols-outlined text-error mb-2">local_fire_department</span>
+                                <span class="font-headline-sm text-primary">Calorias</span>
+                            </div>
+                            <div class="bg-surface-container p-4 rounded-lg flex flex-col items-center text-center border border-white/5 hover:border-white/10 transition-colors">
+                                <span class="material-symbols-outlined text-primary-container mb-2">route</span>
+                                <span class="font-headline-sm text-primary">Distância</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Originality Badge -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop flex justify-center animate-on-scroll">
+            <div class="bg-surface-container-high border border-white/10 rounded-full px-8 py-4 flex items-center gap-4 shadow-2xl">
+                <span class="material-symbols-outlined text-secondary-container material-icon-filled-32">verified</span>
+                <div>
+                    <span class="font-headline-md text-primary block text-lg font-semibold">Originalidade Garantida</span>
+                    <span class="font-body-sm text-on-surface-variant">Produto autêntico de alta precisão</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Checkout / Compra (NOVA SEÇÃO) -->
+        <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="comprar">
+            <div class="max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-start">
+                    
+                    <!-- Checkout Details (Left Column) -->
+                    <div class="flex flex-col gap-stack-md animate-on-scroll">
+                        <span class="text-secondary font-label-sm uppercase tracking-widest">Garanta o seu hoje</span>
+                        <h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary">Lançamento Especial.</h2>
+                        <p class="font-body-lg text-on-surface-variant">
+                            Faça seu pedido agora e aproveite nossa promoção de lançamento com frete expresso gratuito para todo o Brasil. Estoque limitado.
+                        </p>
+                        
+                        <!-- Value Propositions -->
+                        <div class="flex flex-col gap-3 mt-2">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">local_shipping</span>
+                                <span class="font-body-md text-primary">Frete Expresso Grátis para todo o Brasil</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">shield</span>
+                                <span class="font-body-md text-primary">Garantia oficial de 12 meses contra defeitos</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">replay</span>
+                                <span class="font-body-md text-primary">Devolução grátis em até 7 dias</span>
+                            </div>
+                        </div>
+
+                        <!-- Included in the Box -->
+                        <div class="bg-surface-container p-6 rounded-lg border border-white/5 mt-4">
+                            <span class="font-label-sm text-on-surface-variant uppercase tracking-widest block mb-3">O que vem na caixa:</span>
+                            <ul class="list-disc list-inside space-y-1 font-body-sm text-on-surface-variant">
+                                <li>Smartwatch HOROS ELITE</li>
+                                <li>Cabo de Carregamento Magnético USB-C</li>
+                                <li>Manual do Usuário em Português</li>
+                                <li>Termo de Garantia Chronos Precision</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Form (Right Column) -->
+                    <div class="bg-surface-container rounded-xl p-stack-lg border border-white/10 shadow-2xl animate-on-scroll delay-200 relative overflow-hidden">
+                        <!-- Tiny Ambient Glow for card -->
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+                        
+                        <h3 class="font-headline-md text-primary text-xl font-bold mb-6">Formulário de Checkout</h3>
+                        
+                        <form id="checkout-form" class="flex flex-col gap-6">
+                            
+                            <!-- Input Fields conforme DESIGN.md -->
+                            <div class="flex flex-col gap-1">
+                                <label for="client-name" class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Nome Completo</label>
+                                <input type="text" id="client-name" name="name" required placeholder="Ex: Roberto Silva" class="custom-input py-2 px-1 text-primary placeholder-on-surface-variant/40" />
+                            </div>
+                            
+                            <div class="flex flex-col gap-1">
+                                <label for="client-email" class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">E-mail para entrega</label>
+                                <input type="email" id="client-email" name="email" required placeholder="Ex: roberto@gmail.com" class="custom-input py-2 px-1 text-primary placeholder-on-surface-variant/40" />
+                            </div>
+                            
+                            <div class="flex flex-col gap-1">
+                                <label for="client-phone" class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">WhatsApp / Telefone</label>
+                                <input type="tel" id="client-phone" name="phone" required placeholder="Ex: (11) 99999-9999" class="custom-input py-2 px-1 text-primary placeholder-on-surface-variant/40" />
+                            </div>
+
+                            <!-- Color Choice (Interativo) -->
+                            <div class="flex flex-col gap-3">
+                                <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Selecione a cor do Relógio</span>
+                                <div class="flex gap-4">
+                                    <button type="button" data-color-name="Preto Obsidiana" class="color-option-btn w-10 h-10 rounded-full bg-[#0b1326] border border-white/20 flex items-center justify-center ring-2 ring-primary-container scale-105 transition-all" title="Preto Obsidiana">
+                                        <span class="w-4 h-4 rounded-full bg-[#0b1326] border border-white/50"></span>
+                                    </button>
+                                    <button type="button" data-color-name="Cinza Titânio" class="color-option-btn w-10 h-10 rounded-full bg-[#31394d] border border-white/20 flex items-center justify-center transition-all" title="Cinza Titânio">
+                                        <span class="w-4 h-4 rounded-full bg-[#31394d] border border-white/50"></span>
+                                    </button>
+                                    <button type="button" data-color-name="Azul Glacial" class="color-option-btn w-10 h-10 rounded-full bg-[#e9feff] border border-white/20 flex items-center justify-center transition-all" title="Azul Glacial">
+                                        <span class="w-4 h-4 rounded-full bg-[#e9feff] border-none"></span>
+                                    </button>
+                                </div>
+                                <input type="hidden" id="selected-color" name="selected_color" value="Preto Obsidiana" />
+                            </div>
+
+                            <!-- Price Display -->
+                            <div class="border-t border-white/10 pt-4 flex justify-between items-center mt-2">
+                                <div class="flex flex-col">
+                                    <span class="text-on-surface-variant text-sm">Valor Total</span>
+                                    <span class="text-secondary-fixed text-xs font-semibold uppercase">Frete Grátis incluso</span>
+                                </div>
+                                <span class="font-headline-md text-primary text-2xl font-bold">R$ 187,00</span>
+                            </div>
+
+                            <!-- Submit Button with scale-98 active state -->
+                            <button type="submit" id="submit-purchase-btn" class="w-full bg-primary-container text-on-primary-container py-4 rounded-full font-label-sm uppercase tracking-widest text-center font-bold hover:scale-95 transition-all duration-200 btn-scale-active mt-2">
+                                Finalizar Pedido
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button (FAB) for Mobile/Quick Buy -->
+    <a class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary-container px-6 py-4 rounded-full font-label-sm uppercase tracking-widest shadow-lg hover:scale-95 transition-transform duration-200 btn-scale-active flex items-center gap-2 group" href="#comprar">
+        <span>Compre Agora</span>
+        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-white/5 w-full py-stack-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+        <div class="flex flex-col gap-4">
+            <div class="font-display-lg text-headline-md text-primary font-bold">
+                HOROS ELITE
+            </div>
+            <p class="font-body-md text-on-surface-variant">© 2024 HOROS Precision. Todos os direitos reservados.</p>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <span class="font-label-sm text-on-surface uppercase tracking-widest mb-2 font-semibold">Legal</span>
+            <a class="font-body-md text-on-tertiary-container hover:text-primary transition-colors" href="#">Termos de Serviço</a>
+            <a class="font-body-md text-on-tertiary-container hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <span class="font-label-sm text-on-surface uppercase tracking-widest mb-2 font-semibold">Ajuda</span>
+            <a class="font-body-md text-on-tertiary-container hover:text-primary transition-colors" href="#">Suporte</a>
+            <a class="font-body-md text-on-tertiary-container hover:text-primary transition-colors" href="#">Rastreamento</a>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
